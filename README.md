@@ -43,9 +43,7 @@ Esto sugiere que el modelo es capaz de aprender de los datos de entrenamiento y 
 ## Conclusiones 
 
 La precisión de validación también aumenta a lo largo de las 10 épocas, pero no tan rápidamente como la precisión de entrenamiento. 
-
-Esto es también un buen signo, ya que sugiere que el modelo no está sobreajustándose a los datos de entrenamiento.
-
+Esto es un buen signo, ya que sugiere que el modelo no está sobreajustándose a los datos de entrenamiento.
 La pérdida de entrenamiento disminuye constantemente a lo largo de las 10 épocas. Esto es un buen signo, ya que sugiere que el modelo está aprendiendo a cometer menos errores.
 
 En general, el modelo se ha entrenado con éxito. Sin embargo, estos son sólo los resultados del entrenamiento del modelo. 
