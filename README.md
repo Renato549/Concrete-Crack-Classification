@@ -22,7 +22,7 @@ En su total hay 2 clases para las imagenes, POSITIVE Y NEGATIVE, POSITIVE refier
 Se uso el prefijo 0000xT, donde x es el numero de la imagen y T el termino referente a la clase, ej: 00001P.jpg.
 
 ## Resultados primera evaluacion
-![Train and Validation de Modelo Sin Refinar](./img/Screenshot 2024-05-26 205947.png)
+![Train and Validation de Modelo Sin Refinar](./img/Accuracy.png)
 
 
 
