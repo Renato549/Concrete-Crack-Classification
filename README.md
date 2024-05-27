@@ -2,13 +2,13 @@
 ## TC3002B
 ### Renato Sebastian Ramírez Calva A01275401
 ## Descripción
-El dataset seleccionado para el modelo consta de 40,000 imágenes en total, distribuido en 20k de concreto quebrado y 20k de concreto no quebrado. Estas imagenes fueron tomadas de varios edificio de campus de METU para su clasificación
+El dataset seleccionado para el modelo consta de 40,000 imágenes en total, distribuido en 20k de concreto quebrado y 20k de concreto no quebrado. Estas imagenes fueron tomadas de varios edificio de campus de METU(Universidad Técnica de Medio Oriente) para su clasificación.
 ## Fuente
 Las imágenes fueron adquiridas del dataset titulado [Concrete Crack Images for Classification de Kaggle](https://www.kaggle.com/datasets/arnavr10880/concrete-crack-images-for-classification?select=Negative). 
 Este conjunto fue seleccionado por la cantidad de imagenes y su formato en su haber.
 
 El dataset fue creado originalmente por el usuario ArnavR. El formato de las imagenes es jpg y todas cumplen con 277 x 277 pixeles.
-Data augmentation no fue aplicado en las imagenes para voltear o rotar en el set original
+Data augmentation no fue aplicado en las imagenes para voltear o rotar en el set original.
 
 ## Dataset
 El dataset original no está incluido en este repositorio. Sin embargo, se puede acceder desde este enlace de [Google Drive](https://drive.google.com/drive/folders/1esR6ZMOZ3Ljps-FKKPdS_Y1fAdb_qZ6E?ths=true).
