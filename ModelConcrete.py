@@ -3,6 +3,8 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import matplotlib.pyplot as plt
+import sklearn as sk
+from sklearn.metrics import confusion_matrix
 import numpy as np
 import os
 
@@ -114,6 +116,9 @@ def train_model(model, train_dataset, validation_dataset, epochs=10):
     return history
 
 history = train_model(model, train_dataset, validation_dataset)
+# Guardar el modelo entrenado
+model.save('my_model.keras')
+print("Modelo guardado como 'my_model.keras'.")
 
 # Evaluar el modelo
 def evaluate_model(model, test_dataset):
@@ -124,30 +129,64 @@ test_loss, test_accuracy = evaluate_model(model, test_dataset)
 print(f"Test loss: {test_loss}")
 print(f"Test accuracy: {test_accuracy}")
 
-# Graficar las curvas de aprendizaje
-def plot_learning_curves(history):
+def calculate_metrics(model, data_generator):
+    # Obtener predicciones y etiquetas verdaderas
+    predictions = []
+    true_labels = []
+
+    for i in range(validation_steps):
+        batch_images, batch_labels = next(data_generator)
+        batch_predictions = model.predict(batch_images)
+        predictions.extend(batch_predictions.flatten())
+        true_labels.extend(batch_labels)
+    
+    predictions = np.array(predictions) > 0.5
+    true_labels = np.array(true_labels)
+
+    # Calcular la matriz de confusión
+    cm = confusion_matrix(true_labels, predictions)
+    TN, FP, FN, TP = cm.ravel()
+
+    return TP, TN, FP, FN
+
+TP, TN, FP, FN = calculate_metrics(model, validation_generator)
+print(f"TP: {TP}, TN: {TN}, FP: {FP}, FN: {FN}")
+
+
+# Graficar las curvas de aprendizaje y otras métricas
+def plot_learning_curves_and_metrics(history, TP, TN, FP, FN):
     acc = history.history['accuracy']
     val_acc = history.history['val_accuracy']
     loss = history.history['loss']
     val_loss = history.history['val_loss']
     epochs = range(1, len(acc) + 1)
 
-    plt.figure(figsize=(12, 9))
-    plt.subplot(2, 1, 1)
+    # Graficar precisión y pérdida
+    plt.figure(figsize=(14, 10))
+    plt.subplot(3, 1, 1)
     plt.plot(epochs, acc, 'bo', label='Training accuracy')
     plt.plot(epochs, val_acc, 'b', label='Validation accuracy')
     plt.title('Training and validation accuracy')
     plt.legend()
 
-    plt.subplot(2, 1, 2)
+    plt.subplot(3, 1, 2)
     plt.plot(epochs, loss, 'bo', label='Training loss')
     plt.plot(epochs, val_loss, 'b', label='Validation loss')
     plt.title('Training and validation loss')
     plt.legend()
 
+    # Graficar TP, TN, FP, FN
+    plt.subplot(3, 1, 3)
+    metrics = [TP, TN, FP, FN]
+    metric_labels = ['TP', 'TN', 'FP', 'FN']
+    plt.bar(metric_labels, metrics, color=['blue', 'green', 'red', 'orange'])
+    plt.title('Confusion Matrix Metrics')
+    
+    plt.tight_layout()
     plt.show()
 
-plot_learning_curves(history)
+plot_learning_curves_and_metrics(history, TP, TN, FP, FN)
+
 
 # Predicciones del modelo
 def model_predictions(model, test_generator):
