@@ -54,8 +54,11 @@ Es importante evaluar el rendimiento del modelo en un conjunto de datos de prueb
 
 ## Referencias
 [1]Wang, J., & Perez, L. (2017, December 01). The Effectiveness of Data Augmentation in Image Classification using Deep Learning. [arXiv preprint arXiv:1712.04621].
+
 [2]Zhu, Z., Bian, Z.-P., Hou, J., Wang, Y., & Chau, L.-P. (2018). When Residual Learning Meets Dense Aggregation: Rethinking the Aggregation of Deep Neural Networks. [https://arxiv.org/abs/2004.08796].
+
 [3]Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., ... & Rabinovich, A. (2015). Going deeper with convolutions. [https://arxiv.org/abs/1409.4842].
+
 [4]Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). Imagenet classification with deep convolutional neural networks.[https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf]
 
 
