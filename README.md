@@ -21,19 +21,6 @@ En su total hay 2 clases para las imagenes, POSITIVE Y NEGATIVE, POSITIVE refier
 
 Se uso el prefijo 0000xT, donde x es el numero de la imagen y T el termino referente a la clase, ej: 00001P.jpg.
 
-## Articulos Guia
-Para la realizacion de este modelo se usaroon varios articulos como guia para idealizar el funcionamiento, cabe recalcar que varios proyectos mencionados en los articulos, usan modelos pre-entrenados.
-
-El modelo realizado en este repositorio fue hecho desde cero para la comprension de las redes neuronales, aunque sea a un nivel superficial.
-
-[The Effectiveness of Data Augmentation in Image Classification using Deep Learning by Jason Wang, Luis Perez](https://arxiv.org/pdf/1712.04621).
-
-[When Residual Learning Meets Dense Aggregation: Rethinking the Aggregation of Deep Neural Networks by Zhiyu Zhu, Zhen-Peng Bian,Junhui Hou1, Yi Wang and Lap-Pui Chau](https://arxiv.org/pdf/2004.08796).
-
-[Going deeper with convolutions by Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich](https://arxiv.org/pdf/1409.4842).
-
-[ImageNet Classification with Deep Convolutional Neural Networks by Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton](https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
-
 ## Resultados primera evaluacion
 ![Train and Validation de Modelo Sin Refinar](./img/Accuracy.png)
 
@@ -64,5 +51,11 @@ La pérdida de entrenamiento disminuye constantemente a lo largo de las 10 époc
 En general, el modelo se ha entrenado con éxito. Sin embargo, estos son sólo los resultados del entrenamiento del modelo. 
 
 Es importante evaluar el rendimiento del modelo en un conjunto de datos de prueba independiente para asegurarse de que se adapta bien a los datos nuevos.
+
+## Referencias
+[1]Wang, J., & Perez, L. (2017, December 01). The Effectiveness of Data Augmentation in Image Classification using Deep Learning. [arXiv preprint arXiv:1712.04621].
+[2]Zhu, Z., Bian, Z.-P., Hou, J., Wang, Y., & Chau, L.-P. (2018). When Residual Learning Meets Dense Aggregation: Rethinking the Aggregation of Deep Neural Networks. [https://arxiv.org/abs/2004.08796].
+[3]Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., ... & Rabinovich, A. (2015). Going deeper with convolutions. [https://arxiv.org/abs/1409.4842].
+[4]Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). Imagenet classification with deep convolutional neural networks.[https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf]
 
 
