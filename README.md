@@ -22,8 +22,11 @@ En su total hay 2 clases para las imagenes, POSITIVE Y NEGATIVE, POSITIVE refier
 Se uso el prefijo 0000xT, donde x es el numero de la imagen y T el termino referente a la clase, ej: 00001P.jpg.
 
 ## Resultados primera evaluacion
-![Train and Validation de Modelo Sin Refinar](./img/Accuracy.png) [1] [2]
+![Train and Validation de Modelo Sin Refinar](./img/Trainingaccuracy.png) [1] [2]
 
+![Training loss](./img/TrainingLoss.png) [2]
+
+![Test Loss](./img/TestLoss.png) [2]
 
 
 En la grafica la precisión del entrenamiento comienza alrededor del 98% y aumenta constantemente hasta más del 99,5%. 
