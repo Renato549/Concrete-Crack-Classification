@@ -35,7 +35,7 @@ La precisión de la validación comienza en alrededor del 97% y aumenta hasta al
 
 Esto sugiere que el modelo está funcionando bien y no está sobreajustado. Sin embargo, monitorear de cerca la precisión de la validación durante proximos entrenamiento seria buena idea para asegurarse de que el modelo no se sobreajuste.
 
-![Epochs](./img/AccuracyModel.png)
+![Epochs](./img/Table.png)
 
 En general, la imagen muestra que el modelo se ha entrenado con éxito. 
 
