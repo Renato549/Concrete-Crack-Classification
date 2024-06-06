@@ -81,11 +81,12 @@ Esto sugiere que el modelo es capaz de aprender de los datos de entrenamiento y 
 La exactitud de prueba alta (0.9942) y la pérdida baja (0.0295) sugieren que el modelo generaliza bien a datos no vistos.
 
 ![Training loss](./img/TrainingLoss.png) [2]
+
 Aunque hay algunas fluctuaciones en la pérdida de validación, la tendencia general es de disminución, lo cual es positivo.
 
 No hay Sobreajuste Significativo. La diferencia entre la pérdida de entrenamiento y la de validación no es extremadamente grande, lo cual indica que no hay un sobreajuste significativo.
 
-![Epochs](./img/Trainingaccuracy.png)
+![Epochs](./img/Trainingaccuracy.png) [1] [2]
 
 El modelo parece estar bien ajustado, dado que la exactitud de entrenamiento y validación son consistentemente altas, y las pérdidas correspondientes son bajas y disminuyen.
 
@@ -94,9 +95,10 @@ El modelo parece estar bien ajustado, dado que la exactitud de entrenamiento y v
 ![Tables](./img/TPFPFNTNTable.png)
 
 ![Tables](./img/TPTNFPFN.png)
+
 El modelo muestra un buen rendimiento tanto en los datos de entrenamiento como en los de validación y prueba, indicando que es robusto y tiene una buena capacidad de generalización.
 
-Predicciones
+
 
 ## Conclusiones 
 
