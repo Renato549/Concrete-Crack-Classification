@@ -21,6 +21,8 @@ En su total hay 2 clases para las imagenes, POSITIVE Y NEGATIVE, POSITIVE refier
 
 Se uso el prefijo 0000xT, donde x es el numero de la imagen y T el termino referente a la clase, ej: 00001P.jpg.
 
+La imagens se redimensionaron a 155
+
 ## Modelo
 El modelo utilizado en este proyecto es una red neuronal convolucional (CNN), Las CNN son particularmente efectivas para tareas de clasificación de imágenes.
 
@@ -75,9 +77,26 @@ Esto sugiere que el modelo es capaz de aprender de los datos de entrenamiento y 
 
 
 ![Epochs](./img/Table.png)
+
+La exactitud de prueba alta (0.9942) y la pérdida baja (0.0295) sugieren que el modelo generaliza bien a datos no vistos.
+
 ![Training loss](./img/TrainingLoss.png) [2]
+Aunque hay algunas fluctuaciones en la pérdida de validación, la tendencia general es de disminución, lo cual es positivo.
+
+No hay Sobreajuste Significativo. La diferencia entre la pérdida de entrenamiento y la de validación no es extremadamente grande, lo cual indica que no hay un sobreajuste significativo.
+
 ![Epochs](./img/Trainingaccuracy.png)
+
+El modelo parece estar bien ajustado, dado que la exactitud de entrenamiento y validación son consistentemente altas, y las pérdidas correspondientes son bajas y disminuyen.
+
 ![Test Loss](./img/TestLoss.png) [2]
+
+![Tables](./img/TPFPFNTNTable.png)
+
+![Tables](./img/TPTNFPFN.png)
+El modelo muestra un buen rendimiento tanto en los datos de entrenamiento como en los de validación y prueba, indicando que es robusto y tiene una buena capacidad de generalización.
+
+Predicciones
 
 ## Conclusiones 
 
@@ -87,9 +106,7 @@ Esto es un buen signo, ya que sugiere que el modelo no está sobreajustándose a
 
 La pérdida de entrenamiento disminuye constantemente a lo largo de las 10 épocas. Esto es un buen signo, ya que sugiere que el modelo está aprendiendo a cometer menos errores.
 
-En general, el modelo se ha entrenado con éxito. Sin embargo, estos son sólo los resultados del entrenamiento del modelo. 
-
-Es importante evaluar el rendimiento del modelo en un conjunto de datos de prueba independiente para asegurarse de que se adapta bien a los datos nuevos.
+En general, el modelo se ha entrenado con éxito. 
 
 ## Referencias
 [1]Wang, J., & Perez, L. (2017, December 01). The Effectiveness of Data Augmentation in Image Classification using Deep Learning. [https://arxiv.org/abs/1712.04621].
