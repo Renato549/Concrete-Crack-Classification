@@ -21,6 +21,38 @@ En su total hay 2 clases para las imagenes, POSITIVE Y NEGATIVE, POSITIVE refier
 
 Se uso el prefijo 0000xT, donde x es el numero de la imagen y T el termino referente a la clase, ej: 00001P.jpg.
 
+## Modelo
+El modelo utilizado en este proyecto es una red neuronal convolucional (CNN), Las CNN son particularmente efectivas para tareas de clasificación de imágenes.
+
+Las CNN están diseñadas con una arquitectura convolucional que imita el sistema visual humano. Esta arquitectura permite a las CNN extraer características jerárquicas de las imágenes.
+
+Estas características les permiten extraer características relevantes de las imágenes de manera eficiente y precisa, incluso cuando las imágenes están sujetas a variaciones menores en términos de posición, orientación y tamaño.
+
+## Arquitectura del Modelo
+Se crea un modelo de tipo Sequential de Keras. Éste tipo de modelo apila capas una tras otra.
+
+### Se agregan tres capas convolucionales Conv2D:
+
+Cada capa tiene 32, 64 y 128 filtros respectivamente (estos filtros aprenden características de la imagen).
+
+El tamaño del kernel de convolución es 3x3 pixeles en todas las capas.
+
+Todas las capas usan la función de activación relu.
+
+### Se agregan tres capas de pooling MaxPooling2D:
+
+Estas capas reducen la dimensionalidad de la salida de las capas convolucionales tomando el valor máximo en un ventana de 2x2 pixeles.
+
+Esto ayuda a controlar la sobrecarga de parámetros y a obtener características robustas a pequeñas variaciones en la imagen.
+
+Se agrega una capa Flatten que transforma el tensor de salida de la última capa convolucional en un vector unidimensional. Esto es necesario para conectarlo a las capas densas.
+
+### Se agregan dos capas densas Dense:
+
+La primera capa tiene 512 neuronas y usa la función de activación relu.
+
+La segunda capa tiene 1 neurona y usa la función de activación sigmoid.
+
 ## Resultados primera evaluacion
 ![Train and Validation de Modelo Sin Refinar](./img/Trainingaccuracy.png) [1] [2]
 
