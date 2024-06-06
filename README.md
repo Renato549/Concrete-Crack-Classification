@@ -73,10 +73,10 @@ Esto sugiere que el modelo es capaz de aprender de los datos de entrenamiento y 
 
 ## Resultados Segunda evaluacion
 
-![Epochs](./img/Trainingaccuracy.png)
+
 ![Epochs](./img/Table.png)
 ![Training loss](./img/TrainingLoss.png) [2]
-
+![Epochs](./img/Trainingaccuracy.png)
 ![Test Loss](./img/TestLoss.png) [2]
 
 ## Conclusiones 
