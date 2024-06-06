@@ -54,11 +54,9 @@ La primera capa tiene 512 neuronas y usa la función de activación relu.
 La segunda capa tiene 1 neurona y usa la función de activación sigmoid.
 
 ## Resultados primera evaluacion
-![Train and Validation de Modelo Sin Refinar](./img/Trainingaccuracy.png) [1] [2]
+![Train and Validation de Modelo Sin Refinar](./img/Accuracy.png) [1] [2]
 
-![Training loss](./img/TrainingLoss.png) [2]
 
-![Test Loss](./img/TestLoss.png) [2]
 
 
 En la grafica la precisión del entrenamiento comienza alrededor del 98% y aumenta constantemente hasta más del 99,5%. 
@@ -75,6 +73,10 @@ La precisión de entrenamiento y la precisión de validación son ambas altas, y
 
 Esto sugiere que el modelo es capaz de aprender de los datos de entrenamiento y generalizarse bien a los datos nuevos.
 
+
+![Training loss](./img/TrainingLoss.png) [2]
+
+![Test Loss](./img/TestLoss.png) [2]
 ## Conclusiones 
 
 La precisión de validación también aumenta a lo largo de las 10 épocas, pero no tan rápidamente como la precisión de entrenamiento. 
