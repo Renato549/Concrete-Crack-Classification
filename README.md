@@ -57,15 +57,13 @@ La segunda capa tiene 1 neurona y usa la función de activación sigmoid.
 ![Train and Validation de Modelo Sin Refinar](./img/Accuracy.png) [1] [2]
 
 
-
-
 En la grafica la precisión del entrenamiento comienza alrededor del 98% y aumenta constantemente hasta más del 99,5%. 
 
 La precisión de la validación comienza en alrededor del 97% y aumenta hasta alrededor del 99%. 
 
 Esto sugiere que el modelo está funcionando bien y no está sobreajustado. Sin embargo, monitorear de cerca la precisión de la validación durante proximos entrenamiento seria buena idea para asegurarse de que el modelo no se sobreajuste.
 
-![Epochs](./img/Table.png)
+![Epochs](./img/AccuracyModel.png)
 
 En general, la imagen muestra que el modelo se ha entrenado con éxito. 
 
@@ -73,10 +71,13 @@ La precisión de entrenamiento y la precisión de validación son ambas altas, y
 
 Esto sugiere que el modelo es capaz de aprender de los datos de entrenamiento y generalizarse bien a los datos nuevos.
 
+## Resultados Segunda evaluacion
 
+![Epochs](./img/Table.png)
 ![Training loss](./img/TrainingLoss.png) [2]
 
 ![Test Loss](./img/TestLoss.png) [2]
+
 ## Conclusiones 
 
 La precisión de validación también aumenta a lo largo de las 10 épocas, pero no tan rápidamente como la precisión de entrenamiento. 
