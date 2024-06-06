@@ -98,7 +98,8 @@ El modelo parece estar bien ajustado, dado que la exactitud de entrenamiento y v
 
 El modelo muestra un buen rendimiento tanto en los datos de entrenamiento como en los de validación y prueba, indicando que es robusto y tiene una buena capacidad de generalización.
 
-
+### Modelo para Predicciones
+https://drive.google.com/drive/folders/1F8lb75vbr_UXgeUpbGXIW_zjeK8A7BRo?ths=true
 
 ## Conclusiones 
 
